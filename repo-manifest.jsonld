@@ -8,7 +8,7 @@
     {
       "@id": "https://repolex.ai/r/modelcontextprotocol/kotlin-sdk/commit/382e27b0ee5bfd3dad89c9fbc34fff1984e16ecd",
       "git:hexsha": "382e27b0ee5bfd3dad89c9fbc34fff1984e16ecd",
-      "repolex:parseStatus": "ast_complete",
+      "repolex:parseStatus": "enrich_complete",
       "git:tagName": "main"
     },
     {

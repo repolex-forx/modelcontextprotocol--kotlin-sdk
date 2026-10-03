@@ -1,0 +1,78 @@
+[2026-10-03T10:31:50Z] === ENRICH ITERATION 1 START | repo=modelcontextprotocol/kotlin-sdk sha=382e27b0 ===
+[2026-10-03T10:31:50Z] [iter=1] PHASE START: enrich repo=modelcontextprotocol/kotlin-sdk sha=382e27b0 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/382e27b0-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/382e27b0ee5bfd3dad89c9fbc34fff1984e16ecd.nq.gz
+[2026-10-03T10:31:50Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-10-03T10:32:02Z] [iter=1] AST store loaded triples=1342765 load_secs=11 mem_mb=1128 MB
+[2026-10-03T10:32:02Z] [iter=1] Step 2: Finding LSP targets mem_mb=1128 MB
+[2026-10-03T10:32:06Z] [iter=1] LSP targets found call_sites=11297 imports=3077 extends=0 implements=0 secs=4
+[2026-10-03T10:32:10Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1128 MB
+[2026-10-03T10:32:17Z] [iter=1] Position index built positions=84672 nodes_with_types=103605 secs=7 mem_mb=1128 MB
+[2026-10-03T10:32:17Z] [iter=1] Step 3: Starting LSP resolution mem_mb=1128 MB already_completed_types=[] already_completed_files=0
+[2026-10-03T10:32:17Z] [iter=1] Resolving target type target_type=call_site count=11297
+[2026-10-03T10:32:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.6 files_done=1 resolved=0 errors=10 current=samples/simple-streamable-server/gradlew
+[2026-10-03T10:32:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.1 files_done=7 resolved=0 errors=52 current=kotlin-sdk-core/src/commonMain/kotlin/io/modelcontextprotocol/kotlin/sdk/types/jsonUtils.kt
+[2026-10-03T10:34:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.5 files_done=9 resolved=45 errors=163 current=kotlin-sdk-core/src/commonTest/kotlin/io/modelcontextprotocol/kotlin/sdk/types/CapabilitiesTest.kt
+[2026-10-03T10:34:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.1 files_done=11 resolved=90 errors=223 current=kotlin-sdk-core/src/commonMain/kotlin/io/modelcontextprotocol/kotlin/sdk/types/UrlElicitationRequiredException.kt
+[2026-10-03T10:36:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.8 files_done=13 resolved=92 errors=383 current=samples/simple-streamable-server/build.gradle.kts
+[2026-10-03T10:37:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.5 files_done=18 resolved=117 errors=448 current=kotlin-sdk-server/build.gradle.kts
+[2026-10-03T10:38:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.2 files_done=20 resolved=168 errors=512 current=kotlin-sdk-client/src/commonTest/kotlin/io/modelcontextprotocol/kotlin/sdk/client/streamable/http/StreamableHttpClientTransportTest.kt
+[2026-10-03T10:38:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.1 files_done=21 resolved=175 errors=598 current=integration-test/src/jvmTest/kotlin/io/modelcontextprotocol/kotlin/sdk/integration/ProtocolConcurrencyIntegrationTest.kt
+[2026-10-03T10:39:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.8 files_done=22 resolved=219 errors=666 current=kotlin-sdk-client/build.gradle.kts
+[2026-10-03T10:41:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.8 files_done=24 resolved=224 errors=857 current=integration-test/src/jvmTest/kotlin/io/modelcontextprotocol/kotlin/sdk/integration/sse/SseAuthenticationTest.kt
+[2026-10-03T10:42:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.4 files_done=27 resolved=250 errors=911 current=samples/kotlinlang-mcp-server/src/test/kotlin/org/kotlinlang/mcp/KotlinlangServerTest.kt
+[2026-10-03T10:42:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.1 files_done=30 resolved=268 errors=970 current=samples/kotlin-mcp-client/src/main/kotlin/io/modelcontextprotocol/sample/client/MCPClient.kt
+[2026-10-03T10:43:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.7 files_done=31 resolved=271 errors=1025 current=integration-test/src/commonTest/kotlin/io/modelcontextprotocol/kotlin/sdk/client/ClientTest.kt
+[2026-10-03T10:44:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.0 files_done=32 resolved=338 errors=1148 current=kotlin-sdk-core/src/commonTest/kotlin/io/modelcontextprotocol/kotlin/sdk/utils/PathSegmentTemplateMatcherTest.kt
+[2026-10-03T10:46:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.7 files_done=34 resolved=360 errors=1314 current=samples/weather-stdio-server/src/main/kotlin/io/modelcontextprotocol/sample/server/McpWeatherServer.kt
+[2026-10-03T10:47:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.7 files_done=39 resolved=401 errors=1413 current=kotlin-sdk-server/src/jvmTest/kotlin/io/modelcontextprotocol/kotlin/sdk/server/DnsRebindingProtectionTest.kt
+[2026-10-03T10:48:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=16.5 files_done=41 resolved=412 errors=1488 current=kotlin-sdk-server/src/commonMain/kotlin/io/modelcontextprotocol/kotlin/sdk/server/WebSocketMcpKtorServerExtensions.kt
+[2026-10-03T10:48:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.1 files_done=43 resolved=436 errors=1537 current=kotlin-sdk-core/src/commonMain/kotlin/io/modelcontextprotocol/kotlin/sdk/shared/Protocol.kt
+[2026-10-03T10:50:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.8 files_done=44 resolved=461 errors=1706 current=kotlin-sdk-core/src/commonMain/kotlin/io/modelcontextprotocol/kotlin/sdk/types/tools.dsl.kt
+[2026-10-03T10:52:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=20.7 files_done=48 resolved=513 errors=1893 current=integration-test/src/jvmTest/kotlin/io/modelcontextprotocol/kotlin/sdk/integration/TransportIntegrationTest.kt
+[2026-10-03T10:53:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=21.3 files_done=49 resolved=530 errors=1953 current=samples/kotlinlang-mcp-server/src/test/kotlin/org/kotlinlang/mcp/tools/SearchKotlinlangTest.kt
+[2026-10-03T10:53:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.1 files_done=50 resolved=534 errors=2023 current=samples/kotlinlang-mcp-server/src/test/kotlin/org/kotlinlang/mcp/cache/TtlCacheTest.kt
+[2026-10-03T10:54:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.6 files_done=53 resolved=574 errors=2075 current=kotlin-sdk-core/src/commonMain/kotlin/io/modelcontextprotocol/kotlin/sdk/types/serializers.kt
+[2026-10-03T10:56:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=24.3 files_done=54 resolved=575 errors=2220 current=kotlin-sdk-server/src/commonMain/kotlin/io/modelcontextprotocol/kotlin/sdk/server/ServerSession.kt
+[2026-10-03T10:56:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=25.1 files_done=56 resolved=587 errors=2301 current=conformance-test/src/main/kotlin/io/modelcontextprotocol/kotlin/sdk/conformance/auth/authCodeFlow.kt
+[2026-10-03T10:57:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=25.7 files_done=58 resolved=598 errors=2350 current=kotlin-sdk-server/src/commonMain/kotlin/io/modelcontextprotocol/kotlin/sdk/server/Server.kt
+[2026-10-03T10:59:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.2 files_done=59 resolved=627 errors=2494 current=integration-test/src/commonTest/kotlin/io/modelcontextprotocol/kotlin/sdk/client/SseTransportTest.kt
+[2026-10-03T10:59:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.9 files_done=63 resolved=682 errors=2564 current=conformance-test/src/main/kotlin/io/modelcontextprotocol/kotlin/sdk/conformance/auth/pkce.kt
+[2026-10-03T11:00:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=28.5 files_done=66 resolved=695 errors=2626 current=integration-test/src/jvmTest/kotlin/io/modelcontextprotocol/kotlin/sdk/server/ServerFeaturesListTest.kt
+[2026-10-03T11:00:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=29.1 files_done=67 resolved=713 errors=2679 current=kotlin-sdk-core/src/commonTest/kotlin/io/modelcontextprotocol/kotlin/sdk/types/dsl/ContentDslTest.kt
+[2026-10-03T11:01:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=29.7 files_done=71 resolved=742 errors=2742 current=kotlin-sdk-core/src/commonTest/kotlin/io/modelcontextprotocol/kotlin/sdk/types/JsonRpcTest.kt
+[2026-10-03T11:02:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=30.5 files_done=74 resolved=804 errors=2823 current=conformance-test/src/main/kotlin/io/modelcontextprotocol/kotlin/sdk/conformance/auth/tokenExchange.kt
+[2026-10-03T11:03:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=31.2 files_done=76 resolved=886 errors=2883 current=samples/kotlinlang-mcp-server/src/main/kotlin/org/kotlinlang/mcp/config/ServerConfig.kt
+[2026-10-03T11:04:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=32.2 files_done=79 resolved=908 errors=2982 current=conformance-test/src/main/kotlin/io/modelcontextprotocol/kotlin/sdk/conformance/auth/clientRegistration.kt
+[2026-10-03T11:04:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=32.8 files_done=83 resolved=932 errors=3037 current=kotlin-sdk-core/src/commonMain/kotlin/io/modelcontextprotocol/kotlin/sdk/types/request.kt
+[2026-10-03T11:05:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=33.3 files_done=86 resolved=967 errors=3093 current=kotlin-sdk-core/src/commonTest/kotlin/io/modelcontextprotocol/kotlin/sdk/shared/ProtocolConcurrencyTest.kt
+[2026-10-03T11:06:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=34.6 files_done=87 resolved=1000 errors=3218 current=kotlin-sdk-server/src/commonMain/kotlin/io/modelcontextprotocol/kotlin/sdk/server/FeatureNotificationService.kt
+[2026-10-03T11:07:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=35.3 files_done=88 resolved=1007 errors=3282 current=kotlin-sdk-client/src/commonTest/kotlin/io/modelcontextprotocol/kotlin/sdk/client/stdio/StdioClientTransportLifecycleTest.kt
+[2026-10-03T11:07:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=35.9 files_done=92 resolved=1025 errors=3345 current=kotlin-sdk-server/src/commonMain/kotlin/io/modelcontextprotocol/kotlin/sdk/server/StdioServerTransport.kt
+[2026-10-03T11:08:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=36.6 files_done=93 resolved=1031 errors=3406 current=kotlin-sdk-core/src/commonMain/kotlin/io/modelcontextprotocol/kotlin/sdk/types/elicitation.dsl.kt
+[2026-10-03T11:08:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=37.1 files_done=96 resolved=1038 errors=3463 current=kotlin-sdk-core/src/commonTest/kotlin/io/modelcontextprotocol/kotlin/sdk/types/DiscoveryTest.kt
+[2026-10-03T11:09:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=37.7 files_done=101 resolved=1044 errors=3518 current=kotlin-sdk-server/src/jvmTest/kotlin/io/modelcontextprotocol/kotlin/sdk/server/TestFixtures.kt
+[2026-10-03T11:10:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=38.5 files_done=106 resolved=1063 errors=3595 current=samples/simple-streamable-server/src/test/kotlin/io/modelcontextprotocol/sample/server/ServerIntegrationTest.kt
+[2026-10-03T11:10:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=39.1 files_done=110 resolved=1081 errors=3651 current=buildSrc/src/main/kotlin/mcp.publishing.gradle.kts
+[2026-10-03T11:11:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=39.6 files_done=116 resolved=1097 errors=3702 current=integration-test/src/jvmTest/kotlin/io/modelcontextprotocol/kotlin/sdk/client/StdioClientTransportTest.kt
+[2026-10-03T11:11:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=40.1 files_done=117 resolved=1109 errors=3752 current=kotlin-sdk-core/src/commonMain/kotlin/io/modelcontextprotocol/kotlin/sdk/types/resources.dsl.kt
+[2026-10-03T11:12:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=41.0 files_done=121 resolved=1155 errors=3840 current=kotlin-sdk-core/src/commonTest/kotlin/io/modelcontextprotocol/kotlin/sdk/types/dsl/ElicitationDslTest.kt
+[2026-10-03T11:13:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=41.6 files_done=125 resolved=1196 errors=3898 current=kotlin-sdk-client/src/commonTest/kotlin/io/modelcontextprotocol/kotlin/sdk/client/ClientAssertCapabilityTest.kt
+[2026-10-03T11:14:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=42.2 files_done=132 resolved=1260 errors=3956 current=build.gradle.kts
+[2026-10-03T11:14:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=42.8 files_done=136 resolved=1272 errors=4007 current=samples/kotlinlang-mcp-server/src/main/kotlin/org/kotlinlang/mcp/content/UrlMapper.kt
+[2026-10-03T11:15:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=43.4 files_done=139 resolved=1301 errors=4070 current=kotlin-sdk-client/src/commonTest/kotlin/io/modelcontextprotocol/kotlin/sdk/client/ClientMetaParameterTest.kt
+[2026-10-03T11:15:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=43.9 files_done=142 resolved=1305 errors=4119 current=kotlin-sdk-server/src/commonMain/kotlin/io/modelcontextprotocol/kotlin/sdk/server/SSEServerTransport.kt
+[2026-10-03T11:16:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=44.5 files_done=152 resolved=1356 errors=4176 current=samples/simple-streamable-server/settings.gradle.kts
+[2026-10-03T11:17:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=45.7 files_done=162 resolved=1375 errors=4290 current=kotlin-sdk/build.gradle.kts
+[2026-10-03T11:18:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=46.2 files_done=168 resolved=1404 errors=4339 current=kotlin-sdk-server/src/commonTest/kotlin/io/modelcontextprotocol/kotlin/sdk/server/ServerSessionAssertCapabilityTest.kt
+[2026-10-03T11:18:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=46.7 files_done=175 resolved=1465 errors=4389 current=kotlin-sdk-core/src/commonMain/kotlin/io/modelcontextprotocol/kotlin/sdk/types/request.dsl.kt
+[2026-10-03T11:19:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=47.3 files_done=182 resolved=1481 errors=4440 current=kotlin-sdk-core/src/commonMain/kotlin/io/modelcontextprotocol/kotlin/sdk/types/common.kt
+[2026-10-03T11:19:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=47.9 files_done=187 resolved=1516 errors=4498 current=kotlin-sdk-client/src/commonMain/kotlin/io/modelcontextprotocol/kotlin/sdk/client/WebSocketClientTransport.kt
+[2026-10-03T11:20:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=48.4 files_done=197 resolved=1524 errors=4555 current=kotlin-sdk-core/src/commonTest/kotlin/io/modelcontextprotocol/kotlin/sdk/types/InitializeTest.kt
+[2026-10-03T11:20:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=49.0 files_done=215 resolved=1571 errors=4605 current=kotlin-sdk-core/src/jsMain/kotlin/io/modelcontextprotocol/kotlin/sdk/utils/UriUtils.js.kt
+[2026-10-03T11:21:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=49.5 files_done=243 resolved=1598 errors=4656 current=kotlin-sdk-core/src/commonTest/kotlin/io/modelcontextprotocol/kotlin/sdk/types/PingRequestTest.kt
+[2026-10-03T11:21:28Z] [iter=1] Target type resolved target_type=call_site resolved=1607 errors=4664 secs=2951 mem_mb=1128 MB
+[2026-10-03T11:21:28Z] [iter=1] Resolving target type target_type=import_statement count=3077
+[2026-10-03T11:21:49Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=50.0 files_done=40 resolved=0 errors=0 current=kotlin-sdk-server/src/commonMain/kotlin/io/modelcontextprotocol/kotlin/sdk/server/Server.kt
+[2026-10-03T11:22:06Z] [iter=1] Target type resolved target_type=import_statement resolved=0 errors=0 secs=39 mem_mb=1128 MB
+[2026-10-03T11:22:45Z] [iter=1] Step 5: Writing final enrichment file triples=82739
+[2026-10-03T11:22:46Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/382e27b0ee5bfd3dad89c9fbc34fff1984e16ecd.nq.gz size_kb=1999
+[2026-10-03T11:22:46Z] [iter=1] PHASE END: enrich elapsed_s=3056 elapsed_min=50.9 total_triples=82739
