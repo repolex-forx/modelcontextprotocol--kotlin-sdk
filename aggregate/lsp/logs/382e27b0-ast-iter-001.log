@@ -1,0 +1,7 @@
+[2026-10-03T10:28:34Z] === AST ITERATION 1 START | repo=modelcontextprotocol/kotlin-sdk sha=382e27b0 ===
+[2026-10-03T10:28:34Z] [iter=1] PHASE START: ast repo=modelcontextprotocol/kotlin-sdk sha=382e27b0
+[2026-10-03T10:28:34Z] [iter=1] Building AST aggregate chunks
+[2026-10-03T10:30:21Z] [iter=1] AST chunks built count=1 triples=1342771
+[2026-10-03T10:30:21Z] [iter=1] AST .complete marker written path=/home/runner/work/forx/forx/storage/aggregate/ast/382e27b0ee5bfd3dad89c9fbc34fff1984e16ecd/.complete
+[2026-10-03T10:30:21Z] [iter=1] PHASE END: ast elapsed_s=107 elapsed_min=1.8
+[2026-10-03T10:30:21Z] [iter=1] Wrote .next-action.json next_action=enrich path=/home/runner/work/forx/forx/storage/aggregate/.next-action.json
