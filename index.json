@@ -1,0 +1,11 @@
+{
+  "org": "modelcontextprotocol",
+  "repo": "kotlin-sdk",
+  "versions": [
+    {
+      "commit": "382e27b0ee5bfd3dad89c9fbc34fff1984e16ecd",
+      "tag": "main",
+      "parsed_at": "2026-10-04T14:34:16.253675+00:00"
+    }
+  ]
+}
