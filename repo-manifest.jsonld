@@ -8,8 +8,9 @@
     {
       "@id": "https://repolex.ai/r/modelcontextprotocol/kotlin-sdk/commit/382e27b0ee5bfd3dad89c9fbc34fff1984e16ecd",
       "git:hexsha": "382e27b0ee5bfd3dad89c9fbc34fff1984e16ecd",
-      "repolex:parseStatus": "enrich_complete",
-      "git:tagName": "main"
+      "repolex:parseStatus": "parsed",
+      "git:tagName": "main",
+      "repolex:parsedAt": "2026-10-04T14:34:16.253110+00:00"
     },
     {
       "@id": "https://repolex.ai/r/modelcontextprotocol/kotlin-sdk/commit/c0f404eb7b979b5a06132824f40d3b89cfdb0e66",
